@@ -1,0 +1,61 @@
+.box {
+   width: 100px;
+   height: 100px;
+   background-color: blue;
+   margin-block: 1cm;
+   margin-left: 1cm;
+}  
+
+.box1 {
+   width: 10cm;
+   height: 5cm;
+   background-color: brown;
+   margin-bottom: 20px;
+} 
+
+.box2 {
+   width: 100mm;
+   height: 50mm;
+   background-color: aqua;
+   margin-top: 50px;
+}
+
+.box3 {
+   width: 2in;
+   height: 1in;
+   background-color: blueviolet;
+   margin-top: 40px;
+}
+
+.text1 {
+   font-size: 18px;
+}
+.text {
+   display: block;  /* или inline-block */
+   font-size: 2em; /* В два раза больше размера шрифта родителя */
+   color: rgba(255, 87, 51, 0.3); /* Полупрозрачный красный цвет */
+}
+
+.box4 {
+   width: 200px;
+   height: 200px;
+   background-color: blue;
+}
+
+
+.box5 {
+   width: 50%; /* Половина ширины родительского элемента */
+   height: 20%;
+   background-color: rgb(28, 209, 15);
+}
+
+.box6 {
+   width: 50vw; /* 50% ширины окна просмотра */
+   height: 50vh; /* 50% высоты окна просмотра */
+   background-color: rgb(222, 28, 28);
+   margin-top: 40px;
+}
+
+
+
+
