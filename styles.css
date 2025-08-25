@@ -1,59 +1,68 @@
+/* Класс .box: квадрат 100×100 пикселей с синим фоном */
 .box {
-   width: 100px;
-   height: 100px;
-   background-color: blue;
-   margin-block: 1cm;
-   margin-left: 1cm;
+   width: 100px;              /* ширина блока 100 пикселей */
+   height: 100px;             /* высота блока 100 пикселей */
+   background-color: blue;    /* фон — синий */
+   margin-block: 1cm;         /* вертикальные отступы сверху и снизу — 1 см */
+   margin-left: 1cm;          /* отступ слева — 1 см */
 }  
 
+/* Класс .box1: прямоугольник в сантиметрах */
 .box1 {
-   width: 10cm;
-   height: 5cm;
-   background-color: brown;
-   margin-bottom: 20px;
+   width: 10cm;               /* ширина 10 сантиметров */
+   height: 5cm;               /* высота 5 сантиметров */
+   background-color: brown;   /* фон — коричневый */
+   margin-bottom: 20px;       /* отступ снизу 20 пикселей */
 } 
 
+/* Класс .box2: прямоугольник в миллиметрах */
 .box2 {
-   width: 100mm;
-   height: 50mm;
-   background-color: aqua;
-   margin-top: 50px;
+   width: 100mm;              /* ширина 100 мм (10 см) */
+   height: 50mm;              /* высота 50 мм (5 см) */
+   background-color: aqua;    /* фон — голубой */
+   margin-top: 50px;          /* отступ сверху 50 пикселей */
 }
 
+/* Класс .box3: прямоугольник в дюймах */
 .box3 {
-   width: 2in;
-   height: 1in;
-   background-color: blueviolet;
-   margin-top: 40px;
+   width: 2in;                /* ширина 2 дюйма (~5.08 см) */
+   height: 1in;               /* высота 1 дюйм (~2.54 см) */
+   background-color: blueviolet; /* фон — фиолетово-синий */
+   margin-top: 40px;          /* отступ сверху 40 пикселей */
 }
 
+/* Текст "Hello": абзац с размером шрифта 18px */
 .text1 {
-   font-size: 18px;
+   font-size: 18px;           /* размер шрифта — 18 пикселей */
 }
+
+/* Текст "Hi": дочерний элемент внутри Hello */
 .text {
-   display: block;  /* или inline-block */
-   font-size: 2em; /* В два раза больше размера шрифта родителя */
-   color: rgba(255, 87, 51, 0.3); /* Полупрозрачный красный цвет */
+   display: block;            /* выводится с новой строки */
+   font-size: 2em;            /* в 2 раза больше размера шрифта родителя */
+   color: rgba(255, 87, 51, 0.3); /* полупрозрачный оранжево-красный */
 }
 
+/* .box4: родительский контейнер */
 .box4 {
-   width: 200px;
-   height: 200px;
-   background-color: blue;
+   width: 200px;              /* ширина 200 пикселей */
+   height: 200px;             /* высота 200 пикселей */
+   background-color: blue;    /* фон — синий */
 }
 
-
+/* .box5: вложенный блок */
 .box5 {
-   width: 50%; /* Половина ширины родительского элемента */
-   height: 20%;
-   background-color: rgb(28, 209, 15);
+   width: 50%;                /* ширина = 50% от родителя (.box4) → 100px */
+   height: 20%;               /* высота = 20% от родителя (.box4) → 40px */
+   background-color: rgb(28, 209, 15); /* ярко-зелёный фон */
 }
 
+/* .box6: блок, зависящий от размеров окна браузера */
 .box6 {
-   width: 50vw; /* 50% ширины окна просмотра */
-   height: 50vh; /* 50% высоты окна просмотра */
-   background-color: rgb(222, 28, 28);
-   margin-top: 40px;
+   width: 50vw;               /* ширина = 50% ширины окна просмотра */
+   height: 50vh;              /* высота = 50% высоты окна просмотра */
+   background-color: rgb(222, 28, 28); /* красный фон */
+   margin-top: 40px;          /* отступ сверху 40px */
 }
 
 

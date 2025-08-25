@@ -1,32 +1,32 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- Объявление стандарта HTML5 -->
 <html lang="en">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta charset="UTF-8"> <!-- Кодировка символов -->
+   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Адаптивная верстка для мобильных -->
    <title>Repeat_Models_in_CSS</title>
-   <link rel="stylesheet" href="styles.css">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> <!-- Подключение Google Fonts: Playfair Display (для заголовка) и Roboto (для текста) -->
+   <link rel="stylesheet" href="styles.css"> <!-- Подключение внешнего CSS -->
+   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Roboto&display=swap" rel="stylesheet"> 
+   <!-- Подключение шрифтов Playfair Display и Roboto с Google Fonts -->
 </head>
 
 <body>
+   <!-- Синие квадраты и прямоугольники -->
+   <div class="box"></div>
+   <div class="box1"></div>
+   <div class="box2"></div>
+   <div class="box3"></div>
 
-<div class="box"></div>
+   <!-- Текст: Hello и Hi (Hi отображается крупнее и с новой строки) -->
+   <p class="text1">Hello 
+       <span class="text">Hi</span>
+   </p>
 
-<div class="box1"></div>
+   <!-- Родительский синий квадрат (200×200) с зелёным вложенным прямоугольником -->
+   <div class="box4">
+      <div class="box5"></div>
+   </div>
 
-<div class="box2"></div>
-
-<div class="box3"></div>
-
-<p class="text1">Hello 
-    <span class="text">Hi</span>
-</p>
-
-<div class="box4">
-<div class="box5"></div>
-</div>
-
-<div class="box6"></div>
- 
+   <!-- Красный прямоугольник, зависящий от размеров окна браузера -->
+   <div class="box6"></div>
 </body>
 </html>
