@@ -103,18 +103,78 @@
      background-color: lightcoral;
    }
 
+/* Первый контейнер: выравнивание текста через Flexbox. → более гибко для линейных макетов (строка или колонка) */
 .container {
-     width: 80%;
-     height: 50vh;
-     background-color: lightgray;
-     margin: 0 auto;
-   }
+  width: 80%;
+  height: 50vh;
+  background-color: lightgray;
+  margin: 20px auto;
+  border: 3px solid #333;     /* рамка вокруг контейнера */
+  border-radius: 10px;          /* скруглённые углы */
+
+  display: flex;               /* превращаем div в flex-контейнер */
+  flex-direction: column;      /* элементы идут сверху вниз */
+  justify-content: center;     /* выравнивание по вертикали (по центру) */
+  align-items: center;         /* выравнивание по горизонтали (по центру) */
+}
+
+/* Второй контейнер: выравнивание текста через CSS Grid. Grid → идеально для сеток и простого центрирования. */
+.container-grid {
+  width: 80%;
+  height: 50vh;
+  background-color: lightblue;
+  margin: 20px auto;
+  border: 3px dashed #222;      /* пунктирная рамка для наглядности */
+  border-radius: 10px;
+
+  display: grid;               /* превращаем div в grid-контейнер */
+  place-items: center;         /* выравниваем содержимое по центру и по горизонтали, и по вертикали */
+}
+
+/* Подписи внутри контейнеров */
+.container::before {    /* ::before «прикрепляется» к началу содержимого блока .container. 
+                           Свойство content вставляет текст "Flexbox Container". Получается, будто в HTML 
+                           внутри контейнера появился элемент с этим текстом, хотя в HTML-коде его нет.
+                           ::before и ::after работают только с блочными или строчными элементами, у которых 
+                           можно отобразить дополнительный контент. Без content они не появятся 
+                           (обязательно нужно content: "" хотя бы пустое). В нашем случае ::before экономит место: 
+                           не нужно писать лишний <h3> или <p> в HTML — подпись появляется прямо из CSS */
+  content: "Flexbox Container"; /* подпись для первого контейнера */
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.container-grid::before {
+  content: "Grid Container";    /* подпись для второго контейнера */
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Текст внутри контейнеров */
 .text-em {
-     font-size: 2em; 
-   }
+  font-size: 2em;              /* размер шрифта в относительных единицах em */
+}
+
 .text-rem {
-     font-size: 1.5rem;    
-   }
+  font-size: 1.5rem;           /* размер шрифта в относительных единицах rem */
+}
+
+/* Стиль для текста с галочкой */
+.success-text {
+  font-size: 18px;        /* размер шрифта */
+  color: green;           /* цвет текста */
+  position: relative;     /* задаём позиционирование, чтобы псевдоэлемент можно было привязать */
+}
+
+/* Псевдоэлемент ::before */
+.success-text::before {
+  content: "✔ ";          /* вставляем символ галочки (обязательно через content) */
+  color: green;           /* делаем галочку зелёной */
+  font-weight: bold;      /* делаем её жирнее */
+  margin-right: 5px;      /* небольшой отступ справа от галочки, чтобы не прилипала к тексту */
+}
 
 
 
