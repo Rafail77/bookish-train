@@ -65,6 +65,34 @@
    margin-top: 40px;          /* отступ сверху 40px */
 }
 
+ .box7 {
+      /* HEX */
+   width: 100px;              /* ширина блока 100 пикселей */
+   height: 100px;             /* высота блока 100 пикселей */
+   margin-block: 1cm;         /* вертикальные отступы сверху и снизу — 1 см */
+   margin-left: 1cm; 
+   background-color: #3498db; /* Синий цвет */
+}
+
+.box8 {
+   /* RGB */
+   width: 100px;              /* ширина блока 100 пикселей */
+   height: 100px;             /* высота блока 100 пикселей */
+   margin-block: 1cm;         /* вертикальные отступы сверху и снизу — 1 см */
+   margin-left: 1cm; 
+   background-color: rgb(52, 152, 219); /* Синий цвет */
+}
+
+.box9 {
+   /* RGBA */
+   width: 100px;              /* ширина блока 100 пикселей */
+   height: 100px;             /* высота блока 100 пикселей */
+   margin-block: 1cm;         /* вертикальные отступы сверху и снизу — 1 см */
+   margin-left: 1cm; 
+   background-color: rgba(52, 152, 219, 0.7); /* Semi-transparent blue color */
+}
+
+
 
 
 
